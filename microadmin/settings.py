@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'products.apps.ProductConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -87,7 +88,8 @@ DATABASES = {
         'NAME': config('DB_NAME', default='mydefaultvalue'),
         'USER': config('DB_USER', default='mydefaultvalue'),
         'PASSWORD': config('DB_PASSWORD', default='mydefaultvalue'),
-        'HOST': config('DB_HOST', default='mydefaultvalue')
+        'HOST': config('DB_HOST', default='mydefaultvalue'),
+        'PORT': config('DB_PORT', default='mydefaultvalue')
     }
 }
 
