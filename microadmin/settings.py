@@ -83,8 +83,11 @@ WSGI_APPLICATION = 'microadmin.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': config('DB_NAME', default='mydefaultvalue'),
+        'USER': config('DB_USER', default='mydefaultvalue'),
+        'PASSWORD': config('DB_PASSWORD', default='mydefaultvalue'),
+        'HOST': config('DB_HOST', default='mydefaultvalue')
     }
 }
 
