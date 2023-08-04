@@ -89,7 +89,7 @@ DATABASES = {
         'USER': config('DB_USER', default='mydefaultvalue'),
         'PASSWORD': config('DB_PASSWORD', default='mydefaultvalue'),
         'HOST': config('DB_HOST', default='mydefaultvalue'),
-        'PORT': config('DB_PORT', default='mydefaultvalue')
+        # 'PORT': config('DB_PORT', default='mydefaultvalue')
     }
 }
 
